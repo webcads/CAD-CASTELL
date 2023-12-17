@@ -7,6 +7,8 @@ html{
     color: #202020;
     color: #676767;
     transition: all ease-in-out 0.3s;
+    scroll-behavior: smooth;
+
   }
 html.dark {
     background-color: #202020;
