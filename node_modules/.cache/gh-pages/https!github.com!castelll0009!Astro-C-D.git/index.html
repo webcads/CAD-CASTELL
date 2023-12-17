@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="Home"><title>C∆D | Home</title><link rel="stylesheet" href="/Astro-C-D/_astro/index.15d3989f.css" /></head><body><header class="lg:flex justify-between p-5  gap-5 mx-auto container md:justify-center"><div class="flex w-full items-center  lg:w-auto justify-between"><a class="-mt-2"><!-- CAT here --><div class="cont-cat" style="display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0px;
+justify-content: flex-end;
+zoom : 0" data-astro-cid-clxfi6vo><div class="cat" style="
+	max-height: 62px;
+	z-index: 1;
+	line-height: normal;
+	" data-astro-cid-clxfi6vo><div class="ear-line" style="display:none" data-astro-cid-clxfi6vo><div class="ear-left" style="color: white" data-astro-cid-clxfi6vo>^</div><div class="ear-right" style="color: white" data-astro-cid-clxfi6vo>^</div></div><div class="face-line" style="color: white; display:none" data-astro-cid-clxfi6vo>&lt;&gt;</div><div class="body-line third-color second-color " style="color: white; color: #00aeff" data-astro-cid-clxfi6vo>Δ</div></div></div></a><div class=" "><input type="checkbox" class="sr-only" id="darkmode-toggle" data-astro-cid-scmzssnj><label for="darkmode-toggle" class="toggle" style="font-size: 1rem" data-astro-cid-scmzssnj><span data-astro-cid-scmzssnj>Toggle dark mode</span></label></div><div class="block lg:hidden"><button id="astronav-menu" aria-label="Toggle Menu"><svg fill="currentColor" class=" md:w-8 md:h-8  text-current" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Toggle Menu</title><path class="astronav-close-icon astronav-toggle hidden" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"></path><path class="astronav-open-icon astronav-toggle" fill-rule="evenodd" d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"></path></svg></button></div></div><button class="pl-1" id="themeToggle" data-astro-cid-bleoaded><svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-bleoaded><path class="sun" fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zm0 1.5a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm12-7a.8.8 0 0 1-.8.8h-2.4a.8.8 0 0 1 0-1.6h2.4a.8.8 0 0 1 .8.8zM4 12a.8.8 0 0 1-.8.8H.8a.8.8 0 0 1 0-1.6h2.5a.8.8 0 0 1 .8.8zm16.5-8.5a.8.8 0 0 1 0 1l-1.8 1.8a.8.8 0 0 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM6.3 17.7a.8.8 0 0 1 0 1l-1.7 1.8a.8.8 0 1 1-1-1l1.7-1.8a.8.8 0 0 1 1 0zM12 0a.8.8 0 0 1 .8.8v2.5a.8.8 0 0 1-1.6 0V.8A.8.8 0 0 1 12 0zm0 20a.8.8 0 0 1 .8.8v2.4a.8.8 0 0 1-1.6 0v-2.4a.8.8 0 0 1 .8-.8zM3.5 3.5a.8.8 0 0 1 1 0l1.8 1.8a.8.8 0 1 1-1 1L3.5 4.6a.8.8 0 0 1 0-1zm14.2 14.2a.8.8 0 0 1 1 0l1.8 1.7a.8.8 0 0 1-1 1l-1.8-1.7a.8.8 0 0 1 0-1z" data-astro-cid-bleoaded></path><path class="moon" fill-rule="evenodd" d="M16.5 6A10.5 10.5 0 0 1 4.7 16.4 8.5 8.5 0 1 0 16.4 4.7l.1 1.3zm-1.7-2a9 9 0 0 1 .2 2 9 9 0 0 1-11 8.8 9.4 9.4 0 0 1-.8-.3c-.4 0-.8.3-.7.7a10 10 0 0 0 .3.8 10 10 0 0 0 9.2 6 10 10 0 0 0 4-19.2 9.7 9.7 0 0 0-.9-.3c-.3-.1-.7.3-.6.7a9 9 0 0 1 .3.8z" data-astro-cid-bleoaded></path></svg></button><script>
+    const theme = (() => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {        
+        return 'dark';        
+      }
+        return 'light';
+    })();
+  
+    if (theme === 'light') {
+      document.documentElement.classList.remove('dark');
+      
+    } else {
+      document.documentElement.classList.add('dark');
+      
+    }
+  
+    window.localStorage.setItem('theme', theme);
+  
+    const handleToggleClick = () => {              
+      const element = document.documentElement;
+      element.classList.toggle("dark");
+  
+       isDark = element.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+                
+    }
+    
+  
+    document.getElementById("themeToggle").addEventListener("click", handleToggleClick);
+  </script><nav class="astronav-items astronav-toggle hidden lg:flex"><ul class="flex flex-col lg:flex-row lg:gap-5 mt-5"><li><a href="#">Home</a></li><li><menu class="astronav-dropdown group" aria-expanded="false"><button class="flex items-center"><span> About</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5 group-open:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg></button><div class="astronav-dropdown dropdown-toggle hidden relative" aria-expanded="false"><div class="lg:absolute bg-white top-2 w-40 border shadow rounded p-2"><ul><li><a href="#">Menu 1</a></li><li><a href="#">Menu 2</a></li><li><div class="astronav-dropdown-submenu group/submenu" aria-expanded="false"><button class="flex w-full items-center justify-between"><span> Dropdown</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5 group-open/submenu:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button><div class="astronav-dropdown dropdown-toggle hidden relative" aria-expanded="false"><ul class="lg:absolute bg-white top-0 left-full w-40 border shadow rounded p-2"><li><a href="#">Submenu 1</a></li><li><a href="#">Submenu 2</a></li><li><div class="astronav-dropdown-submenu group/nestedsubmenu" aria-expanded="false"><button class="flex w-full items-center justify-between"><span>
+Dropdown</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5 group-open/nestedsubmenu:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button><div class="astronav-dropdown dropdown-toggle hidden relative" aria-expanded="false"><ul class="lg:absolute bg-white top-0 left-full w-40 border shadow rounded p-2"><li><a href="#">Submenu
+                                                      1</a></li><li><a href="#">Submenu
+                                                      2</a></li></ul></div></div></li></ul></div></div></li><li><div class="astronav-dropdown-submenu group/submenu" aria-expanded="false"><button class="flex w-full items-center justify-between"><span> Dropdown</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5 group-open/submenu:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button><div class="astronav-dropdown dropdown-toggle hidden relative" aria-expanded="false"><ul class="lg:absolute bg-white top-0 left-full w-40 border shadow rounded p-2"><li><a href="#">Submenu 1</a></li><li><a href="#">Submenu 2</a></li></ul></div></div></li></ul></div></div></menu></li><li><menu class="astronav-dropdown group" aria-expanded="false"><button class="flex items-center"><span> Services</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5 group-open:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg></button><div class="astronav-dropdown dropdown-toggle hidden relative" aria-expanded="false"><div class="lg:absolute bg-white top-2 w-40 border shadow rounded p-2"><ul><li><a href="#">Menu 1</a></li><li><a href="#">Menu 2</a></li><li><div class="astronav-dropdown-submenu group/submenu" aria-expanded="false"><button class="flex w-full items-center justify-between"><span> Dropdown</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5 group-open/submenu:rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button><div class="astronav-dropdown dropdown-toggle hidden relative" aria-expanded="false"><ul class="lg:absolute bg-white top-0 left-full w-40 border shadow rounded p-2"><li><a href="#">Submenu 1</a></li><li><a href="#">Submenu 2</a></li></ul></div></div></li></ul></div></div></menu></li><li><a href="#">Pricing</a></li><li><a href="#">Contact</a></li></ul></nav><script>(function(){const closeOnClick = true;
+
+["DOMContentLoaded", "astro:after-swap"].forEach((event) => {
+  document.addEventListener(event, addListeners);
+});
+
+// Function to clone and replace elements
+function cloneAndReplace(element) {
+  const clone = element.cloneNode(true);
+  element.parentNode.replaceChild(clone, element);
+}
+
+function addListeners() {
+  // Clean up existing listeners
+  const oldMenuButton = document.getElementById("astronav-menu");
+  if (oldMenuButton) {
+    cloneAndReplace(oldMenuButton);
+  }
+
+  const oldDropdownMenus = document.querySelectorAll(".astronav-dropdown");
+  oldDropdownMenus.forEach((menu) => {
+    cloneAndReplace(menu);
+  });
+
+  // Mobile nav toggle
+  const menuButton = document.getElementById("astronav-menu");
+  menuButton && menuButton.addEventListener("click", toggleMobileNav);
+
+  // Dropdown menus
+  const dropdownMenus = document.querySelectorAll(".astronav-dropdown");
+  dropdownMenus.forEach((menu) => {
+    const button = menu.querySelector("button");
+    button &&
+      button.addEventListener("click", (event) =>
+        toggleDropdownMenu(event, menu, dropdownMenus)
+      );
+
+    // Handle Submenu Dropdowns
+    const dropDownSubmenus = menu.querySelectorAll(
+      ".astronav-dropdown-submenu"
+    );
+
+    dropDownSubmenus.forEach((submenu) => {
+      const submenuButton = submenu.querySelector("button");
+      submenuButton &&
+        submenuButton.addEventListener("click", (event) => {
+          event.stopImmediatePropagation();
+          toggleSubmenuDropdown(event, submenu);
+        });
+    });
+  });
+
+  // Clicking away from dropdown will remove the dropdown class
+  document.addEventListener("click", closeAllDropdowns);
+
+  if (closeOnClick) {
+    handleCloseOnClick();
+  }
+}
+
+function toggleMobileNav() {
+  [...document.querySelectorAll(".astronav-toggle")].forEach((el) => {
+    el.classList.toggle("hidden");
+  });
+}
+
+function toggleDropdownMenu(event, menu, dropdownMenus) {
+  toggleMenu(menu);
+
+  // Close one dropdown when selecting another
+  Array.from(dropdownMenus)
+    .filter((el) => el !== menu && !menu.contains(el))
+    .forEach(closeMenu);
+
+  event.stopPropagation();
+}
+
+function toggleSubmenuDropdown(event, submenu) {
+  event.stopPropagation();
+  toggleMenu(submenu);
+
+  // Close sibling submenus at the same nesting level
+  const siblingSubmenus = submenu
+    .closest(".astronav-dropdown")
+    .querySelectorAll(".astronav-dropdown-submenu");
+  Array.from(siblingSubmenus)
+    .filter((el) => el !== submenu && !submenu.contains(el))
+    .forEach(closeMenu);
+}
+
+function closeAllDropdowns(event) {
+  const dropdownMenus = document.querySelectorAll(".dropdown-toggle");
+  const dropdownParent = document.querySelectorAll(
+    ".astronav-dropdown, .astronav-dropdown-submenu"
+  );
+  const isButtonInsideDropdown = [
+    ...document.querySelectorAll(
+      ".astronav-dropdown button, .astronav-dropdown-submenu button, #astronav-menu"
+    ),
+  ].some((button) => button.contains(event.target));
+  if (!isButtonInsideDropdown) {
+    dropdownMenus.forEach((d) => {
+      // console.log("I ran", d);
+      // if (!d.contains(event.target)) {
+      d.classList.remove("open");
+      d.removeAttribute("open");
+      d.classList.add("hidden");
+      // }
+    });
+    dropdownParent.forEach((d) => {
+      d.classList.remove("open");
+      d.removeAttribute("open");
+      d.setAttribute("aria-expanded", "false");
+    });
+  }
+}
+
+function toggleMenu(menu) {
+  menu.classList.toggle("open");
+  const expanded = menu.getAttribute("aria-expanded") === "true";
+  menu.setAttribute("aria-expanded", expanded ? "false" : "true");
+  menu.hasAttribute("open")
+    ? menu.removeAttribute("open")
+    : menu.setAttribute("open", "");
+
+  const dropdownToggle = menu.querySelector(".dropdown-toggle");
+  const dropdownExpanded = dropdownToggle.getAttribute("aria-expanded");
+  dropdownToggle.classList.toggle("hidden");
+  dropdownToggle.setAttribute(
+    "aria-expanded",
+    dropdownExpanded === "true" ? "false" : "true"
+  );
+}
+
+function closeMenu(menu) {
+  // console.log("closing", menu);
+  menu.classList.remove("open");
+  menu.removeAttribute("open");
+  menu.setAttribute("aria-expanded", "false");
+  const dropdownToggles = menu.querySelectorAll(".dropdown-toggle");
+  dropdownToggles.forEach((toggle) => {
+    toggle.classList.add("hidden");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+}
+
+function handleCloseOnClick() {
+  const navMenuItems = document.querySelector(".astronav-items");
+  const navToggle = document.getElementById("astronav-menu");
+  const navLink = navMenuItems && navMenuItems.querySelectorAll("a");
+
+  const MenuIcons = navToggle.querySelectorAll(".astronav-toggle");
+
+  navLink &&
+    navLink.forEach((item) => {
+      item.addEventListener("click", () => {
+        navMenuItems?.classList.add("hidden");
+        MenuIcons.forEach((el) => {
+          el.classList.toggle("hidden");
+        });
+      });
+    });
+}
+})();</script></header><main class="mx-auto container md:pt-10"><script>
+    const element = document.documentElement;
+      element.classList.toggle("dark");
+        isDark = element.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");     
+    //    alert(isDark)   ;
+     // Asigna un valor apropiado a themeColor
+  const themeColor = isDark ? 'white' : 'black';
+    // alert(themeColor)
+</script><header id="header-hero" class="flex flex-col md:flex-row  md:flex-row p-20 gap-5 text-left text-center md:text-left rounderd-xl " data-astro-cid-7vszemnk><div class="flex-1" data-astro-cid-7vszemnk><h1 class="text-5xl font-bold pb-2" data-astro-cid-7vszemnk>Change As You Need!</h1><p class="my-4 text-2xl" data-astro-cid-7vszemnk>Welcome to CAD Codeltad! We merge code, creativity and marketing to boost your digital success. Explore, evolve, we gonna give you something really good.</p><button id="button-action-hero " class="px-10 py-2 bg-sky-600 hover:bg-sky-400 rounded-sm " data-astro-cid-7vszemnk>
+Run it up!
+</button></div><div class="flex-1 " style="align-self: center;" data-astro-cid-7vszemnk><!-- CAT here --><div class="cont-cat" style="display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0px;
+justify-content: flex-end;
+zoom : 2.5" data-astro-cid-7abt7ser><div class="cat" style="
+	max-height: 62px;
+	z-index: 1;
+	line-height: normal;
+	" data-astro-cid-7abt7ser><div class="ear-line" data-astro-cid-7abt7ser><div class="ear-left" style="color: white" data-astro-cid-7abt7ser>^</div><div class="ear-right" style="color: white" data-astro-cid-7abt7ser>^</div></div><div class="face-line" style="color: white" data-astro-cid-7abt7ser>&lt;&gt;</div><div class="body-line third-color second-color " style="color: white; color: #00aeff" data-astro-cid-7abt7ser>Δ</div></div><h1 class="title primary-color font-size-cat" style="color: #636363;
+	font-size: 3rem;
+	max-height: 70px;	
+	color: white" data-astro-cid-7abt7ser>C&nbsp;&nbsp;&nbsp;D</h1></div></div><!-- <img src="imgs/hero-img.svg" alt="" class="w-80"> --></header><section class="flex flex-col md:flex-row py-10 text-center gap-4 md:p-20 gap-y-10"><div class="flex-1 grid grid-cols-2"><div class="text-center"><img src="favicon.svg" class="w-20 m-auto" alt=""><p class="mt-4">Dev management</p></div><div class="text-center"><img src="favicon.svg" class="w-20 m-auto" alt=""><p class="mt-4">Dev management</p></div><div class="text-center"><img src="favicon.svg" class="w-20 m-auto" alt=""><p class="mt-4">Dev management</p></div><div class="text-center"><img src="favicon.svg" class="w-20 m-auto" alt=""><p class="mt-4">Dev management</p></div></div><div class="flex flex-1 flex-col gap-y-10"><h2 class="text-5xl font-bold">Lorem ipsum, dolor </h2><p class="text-3xl  text-current">
+sit amet consectetur adipisicing elit. Excepturi, deleniti esse. Illum impedit accusantium dolor rerum cumque, esse suscipit quaerat.
+</p></div></section><div class="grid md:grid-cols-3 gap-4 p-4 text-white"><div class="bg-slate-800 p-10 rounded-xl"><h2 class="text-2xl font-bold my-4">Encrypted</h2><p>Your data is Encripted and stored in a secure database</p></div><div class="bg-slate-800 p-10 rounded-xl"><h2 class="text-2xl font-bold my-4">Quick Delta </h2><p>You can use  diferents components  from  web sites builded with astro and copy CD-comps.</p></div><div class="bg-slate-800 p-10 rounded-xl"><h2 class="text-2xl font-bold my-4">Encrypted</h2><p>Your data is Encripted and stored in a secure database</p></div><div class="bg-slate-800 p-10 rounded-xl"><h2 class="text-2xl font-bold my-4">Quick Delta </h2><p>You can use  diferents components  from  web sites builded with astro and copy CD-comps.</p></div></div><section class="bg-zinc-900 p-20 rounded-xl my-4 text-center text-white"><h2 class="text-xl font-bold my-5">About Us
+</h2><p class="text-zinc-300">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam maxime sequi quidem, ab suscipit corporis odit vel ipsa fuga eligendi.
+</p></section><h2 class="text-5xl font-bold my-5 text-center my-8">Projects
+</h2><div><div class="flex  flex-col md:flex-row mb-2 text-center  md:text-left justify-evenly "><div class="flex-1 p-4"><h1 class="text-2xl font-bold my-5">CD-comps</h1><p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?</p><button class="bg-indigo-500 hover:bg-indigo-400 px-3 py-2 ">
+read more
+</button></div><div class="flex-1 "><img src="imgs/hero-img.svg" class="w-72" alt=""></div></div><div class="flex  flex-col md:flex-row mb-2 text-center  md:text-left justify-evenly "><div class="flex-1 p-4"><h1 class="text-2xl font-bold my-5">Project 2</h1><p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?</p><button class="bg-indigo-500 hover:bg-indigo-400 px-3 py-2 ">
+read more
+</button></div><div class="flex-1 "><img src="imgs/hero-img.svg" class="w-72" alt=""></div></div><div class="flex  flex-col md:flex-row mb-2 text-center  md:text-left justify-evenly "><div class="flex-1 p-4"><h1 class="text-2xl font-bold my-5">CD-comps</h1><p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?</p><button class="bg-indigo-500 hover:bg-indigo-400 px-3 py-2 ">
+read more
+</button></div><div class="flex-1 "><img src="imgs/hero-img.svg" class="w-72" alt=""></div></div></div><footer class="bg-zinc-900 text-white   py-10  mt-4  "><div class="px-10 mx-auto container flex flex-col md:flex-row  justify-evenly gap-4 text-center md:text-xl"><div><h4 class="font-bold text-xl"></h4><a href="/">Home</a><a href="/about">About</a><a href="/princing">Princing</a></div><div><h4 class="font-bold text-xl" class="font-bold">Site Map</h4><p>Lorem, ipsum.</p><p>Lorem, ipsum.</p><p>Lorem, ipsum.</p></div><div><h4 class="font-bold text-xl">SocialLinks</h4><a href="/">Facebook</a><a href="/about">Instagram</a><a href="/princing">Dicord</a></div></div></footer></main></body></html>
