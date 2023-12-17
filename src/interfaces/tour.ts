@@ -11,7 +11,7 @@
 //     };
 //   }
 
-export default interface Article {
+export default interface tour{
       id: number;
       attributes: {
         title: string;

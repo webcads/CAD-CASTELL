@@ -9,14 +9,22 @@ import About from '../components/landing/About.astro';
 import Projects from '../components/landing/Projects.astro'
 import Services from "../components/landing/Services.astro";
 
+//fetch form strapi
+import fetchApi from '../lib/strapi';
+import type Tour from '../interfaces/tour';
 
+const tours = await fetchApi<Tour[]>({
+  endpoint: 'tours', // the content type to fetch
+  wrappedByKey: 'data', // the key to unwrap the response
+});
 
+console.log(tours);
 ---
 
 <Layout title="Home">	
 
 	<Hero></Hero>
-	<Services></Services>
+	<Services></Services>	
 	<More></More>
 	<Features></Features>
 	<About></About>
