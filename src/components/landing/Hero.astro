@@ -6,13 +6,14 @@ import pathImgLogotipo from "../../imgs/logotipo.svg"
 import pathImgAsistant from "../../imgs/asistant.png"
 import Branding from '../resources/Branding.astro'
 import LogoTipo from '../resources/LogoTipo.astro'
+import CAD_Asistant from '../resources/CAD_Asistant.astro'
 // const  themeColor  = '#676767';
 const zoomResolution = '1'; 
 const isDark = false;
 const themeColor = isDark ? '#ffffff' : '#676767';
 ---
 <script is:inline>import { transitionEnabledOnThisPage } from "astro:transitions/client";
-
+    
     const element = document.documentElement;
     element.classList.toggle("dark");
     isDark = element.classList.contains("dark");
@@ -38,34 +39,44 @@ const themeColor = isDark ? '#ffffff' : '#676767';
         
         <div class="flex flex-col  gap-1">
             <span class="pr-1" style="width: 100%; display: flex; justify-content: center;  ">                
-               <Branding brandingColor={"cyan"}  w="100px" ></Branding>
+                <Branding brandingColor={"cyan"}  w="100px" ></Branding>
             </span>  
             <span class="text-center" style="max-width: fit-content; position: relative; display:block; min-width: 240px;">                
                 <LogoTipo brandingColor={"cyan"}   w="300px"></LogoTipo>    
             </span>   
             
         </div>
-     
-
-        <span class="flex pt-10 flex-col " style=" max-width: 400px; width: 300px;">
-          
+        
+        
+        <span class="flex pt-10 pb-10 flex-col " style=" max-width: 400px; width: 300px;">
+            
             <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200  hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 hover:bg-cyan-500 ">Webs</button>  
-             <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200  hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 hover:bg-cyan-500 ">Design</button>
-
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200  hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 hover:bg-cyan-500 ">Design</button>
+            
             <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200  hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 hover:bg-cyan-500 ">Ads</button>
-                 
+            
+        </span>  
+        
+        
+        <span class="flex" style="    padding-left: 80%;
+        padding-right: 1%;
+        display: block;
+        min-width: 100%;
+        }">
+            <CAD_Asistant color={"cyan"} w="150px"></CAD_Asistant>
         </span>        
-       
-    </div>
+
+
+
+</div>
 
 <!-- Asistant -->
-    <div  class="sm:min-w-full md:flex   flex-1 md:min-w-fit" style=" max-width: 300px; justify-content: flex-end; " > 
-        <span class="flex justify-end" style="align-items: flex-end;">
-            <img  src={pathImgAsistant.src} style="max-width: 150px; min-width: 150px; width: 50%;" ></img>               
-        </span>          
-    </div>
-    
-        
+<!-- <span class="flex " style="display: flex ; align-items: end;">
+    <CAD_Asistant color={"cyan"}   w="150px" ></CAD_Asistant>
+</span> -->
+
+
+
 </header>
 
 <script is:inline>
@@ -75,8 +86,8 @@ const themeColor = isDark ? '#ffffff' : '#676767';
         
         // Asegúrate de realizar las acciones necesarias según el valor de isDarkMode
         const themeColor = isDarkMode ? '#ffffff' : '#676767';        
-          // Actualiza el tema del LogoCAD
-          const logoCAD = document.querySelector('LogoCAD');
+        // Actualiza el tema del LogoCAD
+        const logoCAD = document.querySelector('LogoCAD');
         if (logoCAD) {
             logoCAD.setAttribute('theme', themeColor);
         }
@@ -85,7 +96,7 @@ const themeColor = isDark ? '#ffffff' : '#676767';
     
     // Ejecutar cuando se carga la página
     document.addEventListener('DOMContentLoaded', toggleDarkMode);
-
+    
     // Ejecutar cuando cambia el tema
     document.addEventListener('theme-change', toggleDarkMode);
 </script>
