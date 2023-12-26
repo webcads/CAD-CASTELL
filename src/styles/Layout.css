@@ -20,3 +20,10 @@ html.dark {
   .dark .nav-links a {
     color: #fff;
   }
+
+  .text-white {
+    color: #fff; /* Color de texto común */
+  }
+.dark .text-white {
+  color: #474747; /* Color de texto en modo oscuro */
+}
