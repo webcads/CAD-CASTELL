@@ -1,0 +1,21 @@
+{
+    "projects":[
+        {
+        "title": "CD-comps",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
+        "image":"imgs/hero-img.svg"     
+
+        },
+        {
+        "title": "Project 2",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
+        "image":"imgs/hero-img.svg"     
+
+        },
+        {
+        "title": "CD-comps",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
+        "image":"imgs/hero-img.svg"     
+        }
+        ]
+}

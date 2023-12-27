@@ -1,0 +1,17 @@
+---
+import Service1 from "./icons/Service1.astro"
+import Service2 from "./icons/Service2.astro"
+import Service3 from "./icons/Service3.astro"
+import Service4 from "./icons/Service4.astro"
+
+const iconMap = {
+    service1: Service1,
+    service2: Service2,
+    service3: Service3,
+    service4: Service4
+
+};
+
+const IconComponent = iconMap[Astro.props.name];
+---
+<IconComponent ></IconComponent>

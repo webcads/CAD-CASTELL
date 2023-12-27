@@ -1,0 +1,36 @@
+/* styles/global.css */
+
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+html{
+    background-color: white;
+    color: #202020;
+    color: #676767;
+    color: #474747;
+    transition: all ease-in-out 0.3s;
+    scroll-behavior: smooth;
+
+  }
+html.dark {
+    background-color: #202020;
+    background-color: #474747;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
+  }
+
+  .text-white {
+    color: #fff; /* Color de texto común */
+  }
+  .dark .text-white {
+    color: #474747; /* Color de texto en modo oscuro */  
+  }
+  .bg-dark{
+    background: #474747;
+  }
+  .dark .bg-dark{
+    background: white;
+  }
+  

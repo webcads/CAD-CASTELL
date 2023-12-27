@@ -1,0 +1,82 @@
+---
+import {
+Astronav,
+MenuItems,
+MenuIcon,
+Dropdown,
+DropdownItems,
+DropdownSubmenu,
+} from "astro-navbar";
+import LogoOnly from '../components/logo-only.astro';
+import DayNight from "../components/CADD/DayNight.astro";
+---
+<style>
+   header{
+      transition: all .2s;
+   }
+</style>
+
+
+<header class="lg:flex justify-between p-5  gap-5 mx-auto container md:justify-center fixed  z-10 " style="min-width: 100vw;">
+ 
+   <Astronav closeOnClick>
+      <div class="flex w-full items-center  lg:w-auto justify-between">
+         <!-- <a class="-mt-2" ><LogoOnly   zoom="0" theme="white" theme_text="#00aeff" face="none" ></a> -->
+            <DayNight></DayNight>           
+         <div class="block lg:hidden">
+           
+            <MenuIcon class=" md:w-8 md:h-8  text-current" />
+         </div>
+      </div>
+       
+     
+      <MenuItems class="hidden lg:flex">
+       
+         <ul class="flex flex-col lg:flex-row lg:gap-5 mt-5">
+            <li>
+               <a href="#">Home</a>
+            </li>
+            <li>
+               <a href="#services">Services</a>
+            </li>
+            <li>
+               
+         
+            <li>
+               <a href="#">Pricing</a>
+            </li>
+            <li>
+               <a href="#">Contact</a>
+            </li>
+            </li>
+         </ul>
+         <!-- <div class="hidden md:block self-center px-5" >
+            <DayNight fontsize="1rem"></DayNight>
+         </div> -->
+      </MenuItems>
+   </Astronav>
+</header>
+
+
+
+<!-- Agrega este script al final de tu archivo HTML -->
+<script is:inline>
+   document.addEventListener("DOMContentLoaded", function () {
+     var header = document.querySelector("header");
+     var lastScrollTop = 0;
+ 
+     window.addEventListener("scroll", function () {
+       var st = window.pageYOffset || document.documentElement.scrollTop;
+ 
+       if (st > lastScrollTop) {
+         // Desplazamiento hacia abajo
+         header.style.transform = "translateY(-100%)";
+       } else {
+         // Desplazamiento hacia arriba
+         header.style.transform = "translateY(0)";
+       }
+ 
+       lastScrollTop = st;
+     });
+   });
+ </script>

@@ -1,0 +1,3 @@
+import type * as Config from "../Config.js";
+export declare const all: <const Arg extends Iterable<Config.Config<any>> | Record<string, Config.Config<any>>>(arg: Arg) => Config.Config<[Arg] extends [readonly Config.Config<any>[]] ? { -readonly [K in keyof Arg]: [Arg[K]] extends [Config.Config<infer A>] ? A : never; } : [Arg] extends [Iterable<Config.Config<infer A_1>>] ? A_1[] : [Arg] extends [Record<string, Config.Config<any>>] ? { -readonly [K_1 in keyof Arg]: [Arg[K_1]] extends [Config.Config<infer A_2>] ? A_2 : never; } : never>;
+//# sourceMappingURL=config.d.ts.map
