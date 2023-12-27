@@ -8,31 +8,35 @@ console.log(services)
 
 
 
-<div id="services">
+<div id="services" class="section">
     <span class="bg-current flex justify-center align-middle">
         <h6 class="text-5xl font-bold  text-center  pb-2 bg-transparent text-white  ">services</h6>
     </span>
-    <!-- wrapper services -->
-    <div class="flex flex-col md:flex-row  justify-center   p-20 gap-16 md:gap-0" style="align-items: center;">
-        {
-            services.map((service) => (
-            <div >
-                <div class="  p-9  m-4 border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 hover:border-8 hover:border-cyan-300   " style=" border-radius: 50px; max-width: 200px; background-color: #e0e0e0; min-width: 160px;  max-width: 160px; min-height: 150px; max-height: 150px;">                    
-                    <Icon name={service['name-icon']}  ></Icon>                                                                              
+    <div class="flex flex-col ">
+        <!-- wrapper services -->
+        <div class="flex flex-col md:flex-row  justify-center   p-20 gap-16 md:gap-0" style="align-items: center;">
+            {
+                services.map((service) => (
+                <div >
+                    <div class="  p-9  m-4 border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700 hover:border-8 hover:border-cyan-300   " style=" border-radius: 50px; max-width: 200px; background-color: #e0e0e0; min-width: 160px;  max-width: 160px; min-height: 150px; max-height: 150px;">                    
+                        <Icon name={service['name-icon']}  ></Icon>                                                                              
+                    </div>
+                    
+                    <a href="#" >
+                        <h5 class="mt-10 text-2xl font-semibold tracking-tight  bg-dark text-center text-white">{service.title}</h5>
+                        <h5 class=" text-2xl font-semibold tracking-tight   text-center ">{service.title_under}</h5>
+                    </a>
                 </div>
                 
-                <a href="#" >
-                    <h5 class="mt-10 text-2xl font-semibold tracking-tight  bg-dark text-center text-white">{service.title}</h5>
-                    <h5 class=" text-2xl font-semibold tracking-tight   text-center ">{service.title_under}</h5>
-                </a>
-            </div>
-            
-            
-            ))
-            
-            
-            
-        }
+                
+                ))                        
+                
+            }
+        </div>
+        
+        <h3 class="p-5 md:pl-60 md:pr-60 text-xl text-justify ">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus laborum placeat at, cumque esse mollitia dolorum qui, asperiores ratione magni quia eligendi rem repellat debitis eos, fugiat voluptatibus ex id!
+        </h3>
     </div>
     
 </div>
