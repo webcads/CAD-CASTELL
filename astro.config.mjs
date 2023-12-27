@@ -8,5 +8,5 @@ export default defineConfig({
   ssr: false,
   integrations: [react(), tailwind()],
   site: 'https://castelll0009.github.io',
-  base: ''
+  base: 'CAD-CASTELL'
 });
