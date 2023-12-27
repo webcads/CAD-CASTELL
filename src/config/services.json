@@ -1,30 +1,35 @@
 {
     "services":[
         {
-        "title": "Webs Code & CMS",
+        "title": "Market",
+        "title_under": " design",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
-        "image":"imgs/hero-img.svg"     ,
+        "name-icon":"service1"   ,
         "icon":"fa-solid fa-laptop-code" 
+        
 
         },
         {
-        "title": "Art & Design",
+        "title": "Payment",
+        "title_under": "solutions",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
-        "image":"imgs/hero-img.svg"     ,
+        "name-icon":"service2"   ,
         "icon":"fa-solid fa-rectangle-ad" 
 
         },
         {
-        "title": "Marketing whit Ads",
+        "title": "Data",
+        "title_under": "managment",
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
-        "image":"imgs/hero-img.svg"    ,
+        "name-icon":"service3"   ,
         "icon":"fa-solid fa-rectangle-ad"
         },
         {
-            "title": "Marketing whit Ads",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
-            "image":"imgs/hero-img.svg"    ,
-            "icon":"fa-solid fa-rectangle-ad"
-            }
+        "title": "Ads",
+        "title_under": "launcher",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe laborum et, tempore ut dolorem nulla nesciunt necessitatibus voluptatibus fuga, nobis eveniet placeat eligendi eos earum ipsum repellendus ullam facere quidem, consectetur qui perferendis cum culpa natus. Laboriosam odio assumenda explicabo commodi molestias accusantium amet! Dolores quasi molestias eligendi rem?",
+        "name-icon":"service4"   ,
+        "icon":"fa-solid fa-rectangle-ad"
+        }
         ]
 }
