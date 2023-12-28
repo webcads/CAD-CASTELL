@@ -6,7 +6,7 @@ export default {
 			colors:{
 				body: "gray",				
 				silver:"silver",
-				secondary: "#2b2c30",
+				secondary: "#474747",
 				secondary_dark: "#202020",
 				brandingColor: "cyan",
 				third:"#6ae8aa"
