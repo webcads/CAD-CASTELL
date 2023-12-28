@@ -1,0 +1,11 @@
+---
+import fetchApi from '../lib/strapi';
+import type Article from '../interfaces/article';
+
+const articles = await fetchApi<Article[]>({
+  endpoint: 'articles', // the content type to fetch
+  wrappedByKey: 'data', // the key to unwrap the response
+});
+console.log("/////////////fetching articles///////////// "+ articles);
+---
+
