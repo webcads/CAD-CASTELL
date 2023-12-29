@@ -1,0 +1,59 @@
+---
+import { FAQS } from '../../config/faq.json'
+import Layout from '../../layouts/layout.astro';
+import Icon from '../../components/Icon.astro'
+import defautlPerson from '../../imgs/castell.png'
+const  url = "../../../public/imgs/team/"
+console.log(FAQS)
+---
+
+
+
+
+<div id="FAQS" class="section">
+    <span class="bg-current flex justify-center align-middle">
+        <h6 class="text-5xl font-bold  text-center  pb-2 bg-transparent text-white  ">FAQS</h6>
+    </span>
+    
+    <div class="flex flex-row  pt-20" style="justify-content: space-evenly; align-items: center;">
+
+        <div class="flex flex-col align-middle justify-center " style="align-items: center;">
+            <span>
+                <img src="../../../public/imgs/FAQ/img1.svg" alt="">
+            </span>
+            
+            <div class="flex flex-col ">
+                <!-- wrapper FAQS -->
+                <div class="flex flex-col  justify-center text-left  pt-0 gap-0 md:gap-0" style="align-items: start;">
+                    {
+                        FAQS.map((faq) => (
+                        <div >
+                            
+                            <a href="#" >
+                                <h5 class="mt-5  font-semibold tracking-tight text-xl  bg-dark text-center text-white">{faq.question}</h5>                                
+                            </a>
+                        </div>
+                        
+                        ))                        
+                        
+                    }
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- cad asistant -->
+        <span class="hidden md:block" style="align-self: end; ">
+            <img src="../../../public/imgs/FAQ/faq3.svg" alt="" class="-ml-5 pb-5">
+            <img src="../../../public/imgs/FAQ/faq2.svg" alt="">
+        </span>
+        
+    </div>
+    
+ 
+    
+    
+    
+    
+</div>
+

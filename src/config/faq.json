@@ -1,0 +1,21 @@
+{
+    "FAQS":[
+        {
+        "question": "How i can change  my  password?",
+        "answer": "Ivan E. Castillo"        
+        },
+        {
+        "question": "How i can change  my  password?",
+        "answer": "Carlos E. Castillo"        
+
+        },
+        {
+        "question": "Another  Question?",
+        "answer": "Laura Medina"        
+        },
+        {
+        "question": "Question four?",
+        "answer": "Jane Doe"        
+        }
+        ]
+}
