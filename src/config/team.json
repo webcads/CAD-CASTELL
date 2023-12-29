@@ -1,0 +1,25 @@
+{
+    "team":[
+        {
+        "image": "castell.png",
+        "name": "Ivan E. Castillo",
+        "carrer": "Systems Engineer"             
+        },
+        {
+        "image": "castell.png",
+        "name": "Carlos E. Castillo",
+        "carrer": "Grapihc Designer"       
+
+        },
+        {
+        "image": "castell2.jpg",
+        "name": "Laura Medina",
+        "carrer": "Ciencias  Contables"       
+        },
+        {
+        "image": "castell.png",
+        "name": "Jane Doe",
+        "carrer": "launcher"        
+        }
+        ]
+}
