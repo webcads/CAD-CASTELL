@@ -2,32 +2,44 @@
 import fetchApi from '../../lib/strapi';
 import type Article from '../../interfaces/article';
 
-export async function getStaticPaths() {
-  const articles = await fetchApi<Article[]>({
+const { slug } = Astro.params;
+
+let article: Article;
+
+try {
+  article = await fetchApi<Article>({
     endpoint: 'tours',
     wrappedByKey: 'data',
+    wrappedByList: true,
+    query: {
+      'filters[slug][$eq]': slug || '',
+    },
   });
-
-  return articles.map((article) => ({
-    params: { slug: article.attributes.slug },
-    props: article,
-  }));
+} catch (error) {
+  return Astro.redirect('/404');
 }
-type Props = Article;
-
-const article = Astro.props;
 ---
-<div>
-    <img src={import.meta.env.STRAPI_URL + article.attributes.image_path.data.attributes.url} />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{article.attributes.title}</title>
+  </head>
+
+  <body>
+    <main>
+      <img src={import.meta.env.STRAPI_URL + article.attributes.image.data.attributes.url} />
 
       <h1>{article.attributes.title}</h1>
 
       <!-- Render plain text -->
       <p>{article.attributes.content}</p>
       <!-- Render markdown -->
-      <MyMarkdownComponent>
+      <!-- <MyMarkdownComponent>
         {article.attributes.content}
-      </MyMarkdownComponent>
+      </MyMarkdownComponent> -->
       <!-- Render html -->
       <Fragment set:html={article.attributes.content} />
-</div>
+    </main>
+  </body>
+</html>

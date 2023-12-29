@@ -3,7 +3,7 @@ import fetchApi from '../lib/strapi';
 import type Article from '../interfaces/article';
 
 const articles = await fetchApi<Article[]>({
-  endpoint: 'tours?populate=image_path', // the content type to fetch
+  endpoint: 'tours?populate=image', // the content type to fetch
   wrappedByKey: 'data', // the key to unwrap the response
 });
 console.log("/////////////fetching articles///////////// "+ articles);
@@ -12,8 +12,8 @@ console.log("/////////////fetching articles///////////// "+ articles);
 <div>
   <ul>
     {
-      articles.map((tour) => (
-        <h1>Here i am!</h1>
+      articles.map((tour) => (        
+        <img src="" alt="">
         <a href={`/blog/${tour.attributes.slug}/`}>
           {tour.attributes.title}
         </a>
