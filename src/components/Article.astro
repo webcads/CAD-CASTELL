@@ -6,22 +6,27 @@ const articles = await fetchApi<Article[]>({
   endpoint: 'tours?populate=image', // the content type to fetch
   wrappedByKey: 'data', // the key to unwrap the response
 });
+
 console.log("/////////////fetching articles///////////// "+ articles);
 ---
 
 <div class="section">
-    
+  
   <span class="bg-current flex justify-center align-middle">
     <h6 class="text-5xl font-bold  text-center  pb-2 bg-transparent text-white  ">Fetching</h6>
-</span>
-
+  </span>
+  
   <ul>
     {
-      articles.map((tour) => (        
-        <img src="" alt="">
+      articles.map((tour) => (         
+      <li>
+        {tour.attributes.image.data ? (
+          <img src={import.meta.env.STRAPI_URL+tour.attributes.image.data.attributes.url} alt={tour.attributes.title} />
+        ) : null} 
         <a href={`/blog/${tour.attributes.slug}/`}>
           {tour.attributes.title}
         </a>
+      </li>       
       ))
     }
   </ul>
