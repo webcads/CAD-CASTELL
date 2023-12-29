@@ -9,7 +9,12 @@ const articles = await fetchApi<Article[]>({
 console.log("/////////////fetching articles///////////// "+ articles);
 ---
 
-<div>
+<div class="section">
+    
+  <span class="bg-current flex justify-center align-middle">
+    <h6 class="text-5xl font-bold  text-center  pb-2 bg-transparent text-white  ">Fetching</h6>
+</span>
+
   <ul>
     {
       articles.map((tour) => (        
