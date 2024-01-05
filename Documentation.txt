@@ -1,2 +1,7 @@
 connect wi CMS Strapi:
 https://docs.astro.build/en/guides/cms/strapi/
+
+
+quickThread:
+
+-enlazarlo con redes sociales
