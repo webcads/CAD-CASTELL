@@ -15,6 +15,7 @@ const {title, description} = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name={title} content={description}>
@@ -26,6 +27,6 @@ const {title, description} = Astro.props;
         <slot></slot>
         <Footer></Footer>
     </main>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 </body>
 </html>

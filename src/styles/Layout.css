@@ -1,5 +1,7 @@
 /* styles/global.css */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import '@fortawesome/fontawesome-free/css/all.css';
 /* roboto-mono-latin-wght-normal */
 @font-face {
